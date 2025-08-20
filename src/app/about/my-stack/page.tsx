@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getGT } from "gt-next/server";
+import { T, useGT } from "gt-next";
 
 type FavoriteItem = {
   name: string;
@@ -16,25 +18,28 @@ type FavoriteSection = {
   subsections: FavoriteSubsection[];
 };
 
-export const metadata: Metadata = {
-  title: "My Stack - Ben Gubler",
-  description:
-    "Technologies, apps, and tools that Ben Gubler uses for development and productivity.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getGT();
+  
+  return {
+    title: t("My Stack - Ben Gubler"),
+    description: t("Technologies, apps, and tools that Ben Gubler uses for development and productivity."),
+  };
+}
 
-const stack: FavoriteSection[] = [
+const getStack = (t: (content: string) => string): FavoriteSection[] => [
   {
-    category: "Hardware",
+    category: t("Hardware"),
     subsections: [
       {
-        title: "Computers",
+        title: t("Computers"),
         items: [
-          { name: "MacBook Pro (work)" },
-          { name: "Dell XPS 15 (personal)" },
+          { name: t("MacBook Pro (work)") },
+          { name: t("Dell XPS 15 (personal)") },
         ],
       },
       {
-        title: "Peripherals",
+        title: t("Peripherals"),
         items: [
           { name: "NuPhy Air75 V3 Keyboard" },
           { name: "MX Master 3S Mouse" },
@@ -43,41 +48,41 @@ const stack: FavoriteSection[] = [
     ],
   },
   {
-    category: "Software",
+    category: t("Software"),
     subsections: [
       {
-        title: "Operating Systems",
+        title: t("Operating Systems"),
         items: [{ name: "macOS" }, { name: "Fedora Linux" }],
       },
       {
-        title: "Desktop & Terminal",
+        title: t("Desktop & Terminal"),
         items: [
           { name: "GNOME Desktop" },
-          { name: "Cosmic Desktop (occasionally)" },
+          { name: t("Cosmic Desktop (occasionally)") },
           { name: "Alacritty" },
         ],
       },
       {
-        title: "Development",
-        items: [{ name: "Zed w/ Vim keybindings" }, { name: "Zen Browser" }],
+        title: t("Development"),
+        items: [{ name: t("Zed w/ Vim keybindings") }, { name: "Zen Browser" }],
       },
     ],
   },
   {
-    category: "Apps",
+    category: t("Apps"),
     subsections: [
       {
-        title: "Language Learning",
+        title: t("Language Learning"),
         items: [
           { name: "Anki", link: "https://apps.ankiweb.net" },
           { name: "Readlang", link: "https://readlang.com" },
           { name: "Pimsleur", link: "https://pimsleur.com" },
           { name: "Beelinguapp", link: "https://beelinguapp.com" },
-          { name: "my own tools", link: "/language-learning" },
+          { name: t("my own tools"), link: "/language-learning" },
         ],
       },
       {
-        title: "Productivity & Life",
+        title: t("Productivity & Life"),
         items: [
           { name: "Todoist" },
           { name: "Obsidian" },
@@ -91,15 +96,22 @@ const stack: FavoriteSection[] = [
 ];
 
 export default function MyStackPage() {
+  const t = useGT();
+  const stack = getStack(t);
+  
   return (
     <div className="space-y-12">
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          My Stack
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Technologies, apps, and tools I use for development and productivity.
-        </p>
+        <T>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            My Stack
+          </h1>
+        </T>
+        <T>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Technologies, apps, and tools I use for development and productivity.
+          </p>
+        </T>
       </header>
 
       {stack.map((section) => (

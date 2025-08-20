@@ -1,0 +1,544 @@
+{
+  "79b9a6513d4ceacb": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      },
+      " ",
+      " ",
+      {
+        "t": "span",
+        "i": 3,
+        "c": [
+          "#",
+          {
+            "i": 4,
+            "k": "_gt_value_4",
+            "v": "v"
+          }
+        ]
+      },
+      "."
+    ]
+  },
+  "cdceac6a8ba205a3": "La page que vous recherchez n’existe pas.",
+  "e1753ab0ce7d5975": "LinkedIn",
+  "974b0eb79f88d86d": "Explication simple",
+  "678a63d83881ca93": "Copier le contenu brut",
+  "a9b1bb5ea856e25c": "À la une",
+  "f41ea186c275b56e": "À propos",
+  "f0deeb8369ae3efb": "Afficher le Markdown brut",
+  "78344b60f407928e": "Autre",
+  "53b5f7c376481390": "Copier le code dans le presse-papiers",
+  "d9cb196550026295": "Échec de la génération de l’image",
+  "c598053db323cdca": "Commencer à expliquer",
+  "a0c7b60e4bd05412": "RSS (format de flux web pour s’abonner aux mises à jour de blogs)",
+  "def93bda648985e9": "Explique comme si j’avais 5 ans",
+  "730dcee4f7598b16": "MacBook Pro (travail)",
+  "efd9775f35548e44": "Copié !",
+  "b50c41465e5408b3": "Email",
+  "efddc1eeef3e7db0": "Accueil",
+  "c96c6913115e475e": "Matériel",
+  "0bb058038c571a69": "Boîte à outils pour entraîner des tokenizers BPE sur des partitions de données personnalisées avec des options de configuration avancées.",
+  "afaa0561ba5a8ba7": {
+    "t": "h2",
+    "i": 1,
+    "c": "Article introuvable"
+  },
+  "1f1b4086cadac9b6": "Apprentissage des langues - Ben Gubler",
+  "a0c70f7a2b48c067": {
+    "t": "h2",
+    "i": 1,
+    "c": "Articles récents"
+  },
+  "d9a4d6e70a27f799": "Désolé, je ne peux pas expliquer cela pour le moment. Veuillez réessayer !",
+  "e7c0553f70c9ca10": "International",
+  "70c5d822ba683825": "Aucun article trouvé avec le tag",
+  "c60bbea0759db02a": "Une application d’apprentissage des langues pour améliorer la compréhension. Écoutez de véritables podcasts natifs avec des transcriptions et des traductions générées par l’IA.",
+  "9a5c9a18a1736a01": "Photo de profil",
+  "da70affac9781e55": "Apprentissage des langues",
+  "3507ea577cbfe240": {
+    "t": "Link",
+    "i": 1,
+    "c": "Aller à l’accueil"
+  },
+  "f5f2092b85074291": "développeur web",
+  "5ae7fd1fc9c3f5a9": "Système",
+  "4fae0ae51ddd074b": {
+    "t": "div",
+    "i": 1,
+    "c": [
+      {
+        "t": "Share",
+        "i": 2
+      },
+      {
+        "t": "h3",
+        "i": 3,
+        "c": "Partager cet article"
+      }
+    ]
+  },
+  "aa600fbbd0a9d686": "Configuration Nix de base pour macOS avec des valeurs par défaut judicieuses et de la documentation.",
+  "ea3bb70a42a500de": "PWA pour s’entraîner aux schémas de déclinaison en tchèque, slovaque et russe.",
+  "3da0fce6cf767642": {
+    "t": "p",
+    "i": 1,
+    "c": "Prêt à simplifier&nbsp;!"
+  },
+  "7e74172900c60360": "Lien vers la section",
+  "4314e052a3524c51": "Favoris",
+  "84de340c2461f1e1": "Partager sur {name}",
+  "ef1e481ac2b7ac31": "Américain",
+  "5d4e690fa23c5a3a": {
+    "t": "p",
+    "i": 1,
+    "c": "Réflexions sur le développement web, l’IA et la création de choses qui comptent."
+  },
+  "1750370afc1f5331": "Erreur lors de la génération du flux RSS",
+  "e3a0b3dcbf2ec893": "apprentissage automatique",
+  "28a45948473da7f8": "GitHub",
+  "ceb6ba0f86d976c1": {
+    "t": "p",
+    "i": 1,
+    "c": "Je lis ton article de blog..."
+  },
+  "d750b0a5672cdbe7": {
+    "t": "header",
+    "i": 1,
+    "c": [
+      {
+        "t": "h1",
+        "i": 2,
+        "c": "Contact"
+      },
+      {
+        "t": "p",
+        "i": 3,
+        "c": "Je suis toujours partant pour échanger avec d’autres développeurs, discuter de nouvelles idées ou explorer des collaborations potentielles. N’hésitez pas à me contacter !"
+      }
+    ]
+  },
+  "28804cef2c57e4d5": "Droit d’auteur {year} Ben Gubler",
+  "2cd4944ba0301722": "En train d’expliquer...",
+  "40947665b1503ba3": {
+    "t": "h1",
+    "i": 1,
+    "c": "404"
+  },
+  "cd8ccd4b937873e1": "Foncé",
+  "74bc97362b457d52": {
+    "t": "Badge",
+    "i": 1,
+    "c": "Actuellement en stage chez Vercel"
+  },
+  "4a73344dd83b8f0e": {
+    "t": "h1",
+    "i": 1,
+    "c": "Projets"
+  },
+  "cf1dfa31f755ed76": "Évaluez et comparez des tokenizers dans de nombreuses langues grâce à des visualisations et analyses interactives.",
+  "7224ad670aa82471": "Une extension Chrome qui transforme votre page de nouvel onglet en un tableau de bord personnalisable.",
+  "d8b46c0127d88a10": "En savoir plus sur Ben Gubler, ses études en IA, les langues, et son travail de développeur web.",
+  "6601f653ec09b078": "Classiques",
+  "7594a0158c4d57e3": "Réexpliquer",
+  "afd298096cfd8136": {
+    "t": "p",
+    "i": 1,
+    "c": "Décomposer cela en termes simples"
+  },
+  "f1a5fae849ae5314": "Voir les articles",
+  "06780520e9f90863": {
+    "t": "p",
+    "i": 1,
+    "c": "Outils et ressources que j’ai créés pour aider à l’apprentissage des langues."
+  },
+  "5e4fdc8793b93674": {
+    "t": "h2",
+    "i": 1,
+    "c": "Archives"
+  },
+  "fda5c9f6d1d9da06": "Basculer le thème",
+  "9263adc2beb9fc18": "IA et apprentissage automatique",
+  "21b9a8bf7d73d803": "Thème du système",
+  "b3e752e34aaa33e0": "Bonjour ! Ahoj ! Привет !",
+  "b710e73c5611e3f4": "Contact — Ben Gubler",
+  "7fe23b0204df5f61": "Site personnel de Ben Gubler. Stagiaire en développement web chez Vercel, étudiant l’IA et les langues humaines à la BYU.",
+  "6c9b9dc3b6bc4b97": "L’article que vous cherchez n’existe pas.",
+  "70dd984db771852a": "Projets - Ben Gubler",
+  "2e033faed4816b63": {
+    "t": "p",
+    "i": 1,
+    "c": "Articles plus anciens qui peuvent être obsolètes mais qui conservent encore une certaine valeur."
+  },
+  "239e1d076b1e9abe": "Une extension Chrome qui transforme, pendant la saisie, les caractères écrits avec le « x-system » de l’espéranto en caractères espérantos.",
+  "daf080584b6c4e5f": {
+    "t": "span",
+    "i": 1,
+    "c": "Fermer"
+  },
+  "56354511d24cdb32": {
+    "t": "p",
+    "i": 1,
+    "c": "Livres, films et autres choses que j’aime et que je recommande."
+  },
+  "dbd5ab298a023ab8": "Un moteur de templates JS embarqué et rapide. Largement utilisé avec plus de 1,5 k Étoiles GitHub et environ 1 M de téléchargements hebdomadaires.",
+  "2096e678e9ff17b6": "Outils open source",
+  "fdd81c55ee7946f3": "Lumière",
+  "820298311342f8d7": "Boîte à outils pour créer facilement des Small Language Models (SLM), destinée aux chercheurs (travail en cours).",
+  "f52c29a8ce2d1f99": "Reddit",
+  "1a616ffc2514ec95": {
+    "t": "h1",
+    "i": 1,
+    "c": "Articles"
+  },
+  "6d57c627b689ce3a": "Hacker News",
+  "c455f6a81ea33c36": "Explique-moi comme si j’avais 5 ans",
+  "4add1139ae8ec5c1": "Contact",
+  "bad9b1c9be9e960a": {
+    "t": "h1",
+    "i": 1,
+    "c": "Bonjour ! Ahoj ! Привет ! مرحبا! 👋"
+  },
+  "fe04975a9ca7df24": "Bibliothèque de calcul de type PyTorch pour TS/JS utilisant WebGPU (travail en cours).",
+  "98931a83736430a1": "Site web propulsé par l’IA pour apprendre les langues avec des leçons personnalisées et des sessions de pratique interactives.",
+  "69dc7bfcbe2128f6": {
+    "t": "Link",
+    "i": 1,
+    "c": "GitHub"
+  },
+  "82d3a80413d6a1c3": "Lecture de 5 min",
+  "3f96a7686163d260": {
+    "t": "h1",
+    "i": 1,
+    "c": "Favoris"
+  },
+  "bc79b8827bd6278c": "Livres",
+  "27c04964a9ee9e77": "Foi",
+  "217a321934b935db": {
+    "t": "h2",
+    "i": 1,
+    "c": "Page non trouvée"
+  },
+  "faa3f67be31bfeca": "Thème sombre",
+  "0ee81746110ea465": "Fiches de cas imprimables pour mémoriser rapidement et efficacement les schémas de déclinaison des noms tchèques.",
+  "8313f3c1e394a316": "Idéal pour les demandes professionnelles et les conversations plus longues",
+  "c3f6f3040689b349": {
+    "t": "h3",
+    "i": 1,
+    "c": "Voir la version brute (pour les LLM)"
+  },
+  "c59720248f69d5aa": "Recommandé",
+  "aa3f99e380d00c4f": "Suis-moi pour des mises à jour rapides et des discussions tech",
+  "2ce262d5ab363438": "Articles - Ben Gubler",
+  "d7899ed4822e5ab1": "Ma stack",
+  "0a43db96a3879d8b": "Convertit entre les commandes CLI de npm/Yarn/pnpm/bun avec prise en charge de tous les principaux gestionnaires de paquets.",
+  "5d7a168f112ec5d5": "Mon site personnel et blog où j’écris sur l’IA, l’entraînement distribué et l’apprentissage des langues.",
+  "64e34ec7ead4eebe": "Thème clair",
+  "2d5e296989434d34": "Un site complet pour s’entraîner aux déclinaisons des noms en tchèque, slovaque et russe avec des exercices interactifs.",
+  "c7a2323b7e48530a": "Ma Stack - Ben Gubler",
+  "269e28c827bba45a": {
+    "t": "Link",
+    "i": 1,
+    "c": [
+      "Voir tout",
+      {
+        "t": "ArrowRight",
+        "i": 2
+      }
+    ]
+  },
+  "428fedbd5fc2d3d1": "Projets hérités",
+  "275116dd1bbe1e27": "X (anciennement Twitter)",
+  "ade50401b1396de9": "Articles",
+  "f054995438d006aa": "Développeur open source, étudiant en ML, et polyglotte en devenir. Créateur d’Eta et de Squirrelly.",
+  "4088fbaddc00d228": "Découvrez mes projets open source et mes contributions",
+  "1fce2ea0cc5f056e": "Site personnel de Ben Gubler. Réflexions sur le développement web, l’IA et la création de choses qui comptent.",
+  "95f506e43b9b3265": "Article introuvable - Ben Gubler",
+  "6f83fb5bebf33e82": "Les livres, films et recommandations personnelles préférés de Ben Gubler.",
+  "d486259b8271dcc6": "Un moteur de templates JavaScript léger avec prise en charge des helpers, des partiels, des filtres, etc. Le projet qui m’a aidé à entrer dans l’open source.",
+  "1947f94eeedb8b9c": "Une collection de projets de Ben Gubler, allant des travaux mis en avant aux créations expérimentales.",
+  "69a38e8afebf5dd4": "Fermer le menu",
+  "dc94ea51cf0b8c7a": "Films",
+  "ca744e725e390110": "Fiches de cas tchèques",
+  "34ea3eae14856307": "Rendre les sujets complexes simples",
+  "e6d86a912aea1aa4": {
+    "t": "h1",
+    "i": 1,
+    "c": "Apprentissage des langues"
+  },
+  "b305d06d0af683b4": "Page non trouvée - Ben Gubler",
+  "064898550ebaf40b": "Package Pip avec un outil CLI pour surveiller l’utilisation du GPU à travers les conteneurs Docker. Une alternative minimaliste à « nvidia-smi ».",
+  "4fc74c7fb8c15459": "Convertissez les jeux de données HuggingFace au format MosaicML Streaming (MDS) pour un entraînement cloud efficace.",
+  "2738ed7155f38194": {
+    "t": "section",
+    "i": 1,
+    "c": [
+      {
+        "t": "h2",
+        "i": 2,
+        "c": "Faits amusants"
+      },
+      {
+        "t": "div",
+        "i": 3,
+        "c": {
+          "t": "ul",
+          "i": 4,
+          "c": [
+            {
+              "t": "li",
+              "i": 5,
+              "c": "Je suis passionné par l’apprentissage des langues — je parle anglais, tchèque et slovaque, et j’apprends actuellement le russe et l’arabe."
+            },
+            {
+              "t": "li",
+              "i": 6,
+              "c": "J’adore passer du temps en plein air ! La randonnée avec sac à dos, la pêche et le VTT figurent parmi mes passe-temps préférés."
+            },
+            {
+              "t": "li",
+              "i": 7,
+              "c": "J’aime la grande littérature, contemporaine comme classique !"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "453fd1697bb9c405": {
+    "t": "span",
+    "i": 1,
+    "c": "X (anciennement Twitter)"
+  },
+  "4373e32d3674bcd0": "Des outils et ressources pour l’apprentissage des langues, incluant des applications d’entraînement à la déclinaison et plus encore.",
+  "233fe71d46008091": "Contactez-moi pour des collaborations, des questions, ou simplement pour dire bonjour.",
+  "de95102c6f770495": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "Découvrez mes ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "projets"
+      },
+      ", lisez mes ",
+      {
+        "t": "Link",
+        "i": 3,
+        "c": "articles"
+      },
+      " ou consultez mon ",
+      {
+        "t": "Link",
+        "i": 4,
+        "c": "CV"
+      },
+      "."
+    ]
+  },
+  "ac9dd72983848c83": {
+    "t": "p",
+    "i": 1,
+    "c": "Je suis Ben — étudiant à la BYU en mathématiques appliquées et en arabe. Je crée des bibliothèques open source, des applications web et des outils d’IA. Actuellement en stage chez Vercel."
+  },
+  "feb481b144af444a": "Réflexions sur le développement web, l’IA et la création de choses qui comptent.",
+  "1758b3d1d63f639f": {
+    "t": "p",
+    "i": 1,
+    "c": "Désolé, l’article que vous recherchez n’existe pas ou a été déplacé."
+  },
+  "7be30fc926cb3b77": "Bot morpion IA créé avec TensorFlow.js. Réalisé à l’adolescence en apprenant le ML.",
+  "6662bfef4fbe8763": "Ouvrir le menu",
+  "57df581328929c7a": {
+    "t": "p",
+    "i": 1,
+    "c": "Désolé, la page que vous recherchez n’existe pas ou a été déplacée."
+  },
+  "402715cd330d167a": "Ordinateurs",
+  "97c326fd40fc8abd": "Fiches de cas imprimables pour mémoriser rapidement et efficacement les schémas de déclinaison des noms russes.",
+  "5d1a87ebd0ba9c9e": "À propos de Ben Gubler",
+  "c2a07f3d5a77e750": "Site personnel de Ben Gubler. Stagiaire en développement web chez Vercel, étudiant l’IA et les langues humaines à la BYU. Réflexions sur le développement web, l’IA et la création de choses qui comptent.",
+  "2e881bd80673c0fa": "Fiches de cas russes",
+  "062a8c8bf68039ab": "Fantastique",
+  "a20c7af31a16306f": "Technologies, applications et outils que Ben Gubler utilise pour le développement et la productivité.",
+  "8e6afde0f536eee2": {
+    "t": "h1",
+    "i": 1,
+    "c": "À propos de moi"
+  },
+  "58f2923fba07dbae": {
+    "t": "Link",
+    "i": 1,
+    "c": "Parcourir tous les articles"
+  },
+  "6e8a4f1758b76948": "Réseau professionnel et discussions liées à la carrière",
+  "cc84bfe0ee5d0174": "Projets",
+  "d2154e244ec0287a": {
+    "t": "p",
+    "i": 1,
+    "c": "Une collection de choses que j’ai créées au fil des années, allant de bibliothèques open source à des applications web et des extensions de navigateur."
+  },
+  "bc959b56a841666f": "Favoris - Ben Gubler",
+  "ce793a9070a24133": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "Je vais expliquer \"",
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      },
+      "\" en termes simples"
+    ]
+  },
+  "2ecf88ef9e8e4259": "Accueil",
+  "2c2d8e264babd7d2": {
+    "t": "section",
+    "i": 1,
+    "c": [
+      {
+        "t": "p",
+        "i": 2,
+        "c": [
+          "Je m'appelle Ben, mais vous me connaissez peut-être sous mon nom d’utilisateur GitHub, ",
+          {
+            "t": "Link",
+            "i": 3,
+            "c": "@bgub"
+          },
+          "."
+        ]
+      },
+      {
+        "t": "p",
+        "i": 4,
+        "c": "J’étudie l’apprentissage automatique et les langues (humaines). Pendant mon temps libre, j’aime créer des sites web et des bibliothèques open source. Je publierai probablement de temps à autre sur tout cela."
+      },
+      {
+        "t": "p",
+        "i": 5,
+        "c": [
+          "Découvrez ",
+          {
+            "t": "Link",
+            "i": 6,
+            "c": "ma stack"
+          },
+          " de technologies et d’outils que j’utilise, parcourez mes ",
+          {
+            "t": "Link",
+            "i": 7,
+            "c": "favoris"
+          },
+          ", dont des livres et des films que j’adore, ou regardez ce que j’ai ",
+          {
+            "t": "Link",
+            "i": 8,
+            "c": "recommandé"
+          },
+          " en matière de cours, d’articles et de ressources d’apprentissage. Pour mon parcours professionnel, vous pouvez consulter mon ",
+          {
+            "t": "Link",
+            "i": 9,
+            "c": "CV"
+          },
+          "."
+        ]
+      },
+      {
+        "t": "p",
+        "i": 10,
+        "c": "Je suis actuellement étudiant à BYU (Brigham Young University) à Provo, où je prépare une majeure en ACME (Applied and Computational Mathematics) et une mineure en arabe. Je suis aussi assistant de recherche au PCCL (Perception, Control, and Cognition Lab) à BYU, où j’étudie de nouvelles applications de l’intelligence artificielle et du Traitement automatique du langage naturel."
+      }
+    ]
+  },
+  "c480d98c240a3a0f": "Le contenu est requis",
+  "a7a6f6e342ca4342": {
+    "t": "h3",
+    "i": 1,
+    "c": "Table des matières"
+  },
+  "7cd96c52865feaa9": {
+    "t": "h1",
+    "i": 1,
+    "c": "Fiches de cas en russe"
+  },
+  "4333e462b0c8ffb5": "pour afficher et télécharger le PDF dans une nouvelle fenêtre.",
+  "14951deeb9fd1a80": "Apprentissage des langues",
+  "82b6d11f3e3cb557": "Fiches de cas tchèque",
+  "6cf3a79976b7d2d2": "Bureau et Terminal",
+  "be7aef60733f8a31": "Fiches de cas tchèques - Ben Gubler",
+  "a04daf17e3be1edc": "Périphériques",
+  "593dab95ec87fb1a": "Zed avec raccourcis clavier Vim",
+  "c8d07954aba03c4d": "Veuillez expliquer cet article de blog en termes simples :\n\n{content}",
+  "db1fe4831da96145": {
+    "t": "p",
+    "i": 1,
+    "c": "J’y ai consacré de nombreuses heures ! Imprimez-les et vous mémoriserez les schémas de déclinaison tchèque en un rien de temps."
+  },
+  "99cd8854dc10a0a9": "Mis à jour ",
+  "aa2d9f8e9ea84f58": "J’ai créé des fiches de cas pour le russe afin que vous n’ayez pas à le faire.",
+  "2f00e71f816405c2": "Dell XPS 15 (personnel)",
+  "3966ae164fc4fb1f": "J’ai créé des fiches de cas pour le tchèque afin que vous n’ayez pas à le faire.",
+  "382eff4355fc0871": {
+    "t": "h1",
+    "i": 1,
+    "c": "Ma stack"
+  },
+  "5c09252a83b0de9b": {
+    "t": "h2",
+    "i": 1,
+    "c": "Fiche de cas avancée"
+  },
+  "f706057a0ef052ff": {
+    "t": "p",
+    "i": 1,
+    "c": "J’ai passé de nombreuses heures à créer ceci ! Imprimez-le et vous mémoriserez les schémas de déclinaison russes en un rien de temps."
+  },
+  "41d2f4230d1d960e": {
+    "t": "h1",
+    "i": 1,
+    "c": "Fiches de cas en tchèque"
+  },
+  "9c99c0ea5c27db25": "ici",
+  "05e4896829f2e7b6": "Logiciels",
+  "f750e6e77895e769": "site web pour pratiquer les déclinaisons en tchèque/russe",
+  "880b21ecb28d7479": "Systèmes d’exploitation",
+  "4150f0ce541ea17c": "Vous pourriez également être intéressé par mes",
+  "e999020212037bfa": {
+    "t": "p",
+    "i": 1,
+    "c": "Technologies, applications et outils que j’utilise pour le développement et la productivité."
+  },
+  "18b7f8e2dee69d61": "Article introuvable",
+  "b4b801983b536434": " (archivé)",
+  "77d68abb75acf8cd": "Article introuvable",
+  "fdd8a5b7dce4c10c": {
+    "t": "h2",
+    "i": 1,
+    "c": "Fiche de cas"
+  },
+  "7e5b3bc676c85e8a": "ou mon",
+  "6a9f1df769ad433e": "Cosmic Desktop (occasionnellement)",
+  "cfb740b7462fab33": "Articles",
+  "9090d8c41e669be7": "Productivité et vie",
+  "01147a37c6c7e5ee": "Remarque : ceci ne s’affichera pas correctement sur mobile : go",
+  "cc0ddbf6a83c8fa4": "Fiches de cas russes - Ben Gubler",
+  "1691b804828b635c": "Fiches de cas russes",
+  "c62378275dc5c4f6": "mes propres outils",
+  "8c74857ecf98c255": "Développement",
+  "f1c6f3c2d9e4a392": {
+    "t": "h2",
+    "i": 1,
+    "c": "Fiche de cas basique"
+  },
+  "356fdf32f4af59c1": "Tu es super doué pour expliquer des sujets compliqués avec des mots simples et amusants.\n\nExplique l’article de blog suivant comme si tu parlais à un enfant de 5 ans :\n- Utilise des mots simples et des phrases courtes\n- Ajoute des analogies et des comparaisons rigolotes auxquelles il peut s’identifier\n- Sois enthousiaste et encourageant\n- Coupe les idées compliquées en petites bouchées\n- Rends ça captivant tout en restant exact\n\nTitre : \"{title}\"",
+  "0cfbf4677a02b4fe": "Applications"
+}

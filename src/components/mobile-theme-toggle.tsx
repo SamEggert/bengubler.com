@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Monitor, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useGT } from "gt-next";
 
 interface MobileThemeToggleProps {
   onThemeChange?: () => void;
@@ -10,6 +11,7 @@ interface MobileThemeToggleProps {
 
 export function MobileThemeToggle({ onThemeChange }: MobileThemeToggleProps) {
   const { setTheme, theme } = useTheme();
+  const t = useGT();
 
   const handleThemeChange = (newTheme: string) => {
     setTheme(newTheme);
@@ -25,7 +27,7 @@ export function MobileThemeToggle({ onThemeChange }: MobileThemeToggleProps) {
         className="h-8 px-2"
       >
         <Sun className="h-4 w-4" />
-        <span className="sr-only">Light theme</span>
+        <span className="sr-only">{t("Light theme")}</span>
       </Button>
       <Button
         variant={theme === "dark" ? "default" : "ghost"}
@@ -34,7 +36,7 @@ export function MobileThemeToggle({ onThemeChange }: MobileThemeToggleProps) {
         className="h-8 px-2"
       >
         <Moon className="h-4 w-4" />
-        <span className="sr-only">Dark theme</span>
+        <span className="sr-only">{t("Dark theme")}</span>
       </Button>
       <Button
         variant={theme === "system" ? "default" : "ghost"}
@@ -43,7 +45,7 @@ export function MobileThemeToggle({ onThemeChange }: MobileThemeToggleProps) {
         className="h-8 px-2"
       >
         <Monitor className="h-4 w-4" />
-        <span className="sr-only">System theme</span>
+        <span className="sr-only">{t("System theme")}</span>
       </Button>
     </div>
   );
