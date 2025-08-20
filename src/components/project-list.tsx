@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Project } from "@/lib/projects";
+import { T } from "gt-next";
 
 interface ProjectListProps {
   projects: Project[];
@@ -33,14 +34,16 @@ export function ProjectList({ projects }: ProjectListProps) {
               {project.links.github && (
                 <>
                   {" • "}
-                  <Link
-                    href={project.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:no-underline"
-                  >
-                    GitHub
-                  </Link>
+                  <T>
+                    <Link
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:no-underline"
+                    >
+                      GitHub
+                    </Link>
+                  </T>
                 </>
               )}
             </p>

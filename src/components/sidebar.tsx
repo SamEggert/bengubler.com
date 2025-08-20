@@ -1,13 +1,16 @@
 "use client";
 
 import { ThemeToggle } from "@/components/theme-toggle";
-import { navigation } from "@/lib/navigation";
+import { getNavigation } from '@/lib/navigation'; // This requires a t function to be passed into it
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useGT } from "gt-next/client";
 
 export function Sidebar() {
   const pathname = usePathname();
+  const t = useGT();
+  const navigation = getNavigation(t);
 
   return (
     <div className="hidden md:fixed md:inset-y-0 md:z-50 md:flex md:w-64 md:flex-col">
@@ -18,7 +21,7 @@ export function Sidebar() {
             <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-border/20 group-hover:ring-border/40 transition-all">
               <Image
                 src="/bengubler.jpg"
-                alt="Profile photo"
+                alt={t("Profile photo")}
                 width={48}
                 height={48}
                 className="object-cover"

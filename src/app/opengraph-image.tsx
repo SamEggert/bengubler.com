@@ -1,7 +1,9 @@
 import { ImageResponse } from "next/og";
 
 // Image metadata
-export const alt = "Ben Gubler - Web Developer";
+export const getAlt = (t: (content: string) => string) => {
+  return "Ben Gubler - Web Developer";
+};
 export const size = {
   width: 1200,
   height: 630,

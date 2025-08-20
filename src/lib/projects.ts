@@ -13,13 +13,14 @@ export type ProjectSection = {
   projects: Project[];
 };
 
-export const projectsData: ProjectSection[] = [
+export const getProjectsData = (t: (content: string) => string) => {
+  return [
   {
-    category: "Featured",
+    category: t("Featured"),
     projects: [
       {
         name: "Eta",
-        description: "A fast embedded JS template engine. Widely used with 1.5K+ GitHub stars and ~1M weekly downloads.",
+        description: t("A fast embedded JS template engine. Widely used with 1.5K+ GitHub stars and ~1M weekly downloads."),
         tech: "TypeScript, microbundle, Jest, GitHub Actions",
         links: {
           demo: "https://eta.js.org",
@@ -28,7 +29,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "tokka-bench",
-        description: "Benchmark and compare tokenizers across many languages with interactive visualizations and analysis.",
+        description: t("Benchmark and compare tokenizers across many languages with interactive visualizations and analysis."),
         tech: "tokenizers, streamlit",
         links: {
           demo: "https://tokka-bench.streamlit.app/",
@@ -37,7 +38,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "shade",
-        description: "PyTorch-like computation library for TS/JS using WebGPU (Work in Progress).",
+        description: t("PyTorch-like computation library for TS/JS using WebGPU (Work in Progress)."),
         tech: "Deno, WGSL",
         links: {
           github: "https://github.com/nebrelbug/shade",
@@ -45,7 +46,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "TinyLingo",
-        description: "A language learning app for improving comprehension. Listen to authentic native podcasts with AI-generated transcriptions and translations.",
+        description: t("A language learning app for improving comprehension. Listen to authentic native podcasts with AI-generated transcriptions and translations."),
         tech: "Next.js 15, Convex, Clerk, shadcn/ui, OpenRouter",
         links: {
           demo: "https://tinylingo.com",
@@ -55,11 +56,11 @@ export const projectsData: ProjectSection[] = [
     ],
   },
   {
-    category: "AI & Machine Learning",
+    category: t("AI & Machine Learning"),
     projects: [
       {
         name: "tokka",
-        description: "Toolkit for training BPE tokenizers on custom data splits with advanced configuration options.",
+        description: t("Toolkit for training BPE tokenizers on custom data splits with advanced configuration options."),
         tech: "tokenizers, datasets, mosaicml-streaming",
         links: {
           github: "https://github.com/bgub/tokka",
@@ -67,7 +68,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "hf_to_mds",
-        description: "Convert HuggingFace datasets to MosaicML Streaming format (MDS) for efficient cloud-based training.",
+        description: t("Convert HuggingFace datasets to MosaicML Streaming format (MDS) for efficient cloud-based training."),
         tech: "datasets, mosaicml-streaming",
         links: {
           github: "https://github.com/bgub/hf_to_mds",
@@ -75,7 +76,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "mokka",
-        description: "Toolkit for creating Small Language Models (SLMs) easily, targeted towards researchers (Work in Progress).",
+        description: t("Toolkit for creating Small Language Models (SLMs) easily, targeted towards researchers (Work in Progress)."),
         tech: "PyTorch, OmegaConf, WandB",
         links: {
           github: "https://github.com/bgub/mokka",
@@ -83,7 +84,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "GOM",
-        description: "Pip package with CLI tool to monitor GPU usage across Docker containers. A minimalistic alternative to 'nvidia-smi'.",
+        description: t("Pip package with CLI tool to monitor GPU usage across Docker containers. A minimalistic alternative to 'nvidia-smi'."),
         tech: "Python, Docker, CLI",
         links: {
           demo: "https://pypi.org/project/gom/",
@@ -93,11 +94,11 @@ export const projectsData: ProjectSection[] = [
     ],
   },
   {
-    category: "Open Source Tools",
+    category: t("Open Source Tools"),
     projects: [
       {
         name: "bengubler.com",
-        description: "My personal website and blog where I write about AI, distributed training, and language learning.",
+        description: t("My personal website and blog where I write about AI, distributed training, and language learning."),
         tech: "Next.js 15, Tailwind, MDX",
         links: {
           demo: "https://bengubler.com",
@@ -106,7 +107,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "Decline App",
-        description: "PWA for practicing Czech, Slovak, and Russian declension patterns.",
+        description: t("PWA for practicing Czech, Slovak, and Russian declension patterns."),
         tech: "Next.js, Tailwind, PWA",
         links: {
           demo: "https://decline.vercel.app/",
@@ -115,7 +116,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "nix-macos-starter",
-        description: "Starter Nix config for macOS with sensible defaults and documentation.",
+        description: t("Starter Nix config for macOS with sensible defaults and documentation."),
         tech: "nix-darwin, home-manager, homebrew, mise",
         links: {
           github: "https://github.com/nebrelbug/nix-macos-starter",
@@ -123,7 +124,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "npm-to-yarn",
-        description: "Converts between npm/Yarn/pnpm/bun CLI commands with support for all major package managers.",
+        description: t("Converts between npm/Yarn/pnpm/bun CLI commands with support for all major package managers."),
         tech: "TypeScript, Jest",
         links: {
           demo: "https://www.npmjs.com/package/npm-to-yarn",
@@ -133,11 +134,11 @@ export const projectsData: ProjectSection[] = [
     ],
   },
   {
-    category: "Legacy Projects",
+    category: t("Legacy Projects"),
     projects: [
       {
         name: "Squirrelly",
-        description: "A lightweight JavaScript template engine with support for helpers, partials, filters, etc. The project that helped me get into open source.",
+        description: t("A lightweight JavaScript template engine with support for helpers, partials, filters, etc. The project that helped me get into open source."),
         tech: "JavaScript, Template Engine",
         links: {
           demo: "https://squirrelly.js.org",
@@ -146,7 +147,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "Splashpad",
-        description: "A Chrome extension that turns your new tab page into a customizable dashboard.",
+        description: t("A Chrome extension that turns your new tab page into a customizable dashboard."),
         tech: "JavaScript, Chrome Extension",
         links: {
           demo: "https://chrome.google.com/webstore/detail/splashpad/fainejfmhojphdbbfmpomeknplpdnndb",
@@ -154,7 +155,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "Esperaboard",
-        description: "A Chrome extension to transform characters written in the Esperanto 'x-system' into Esperanto characters while typing.",
+        description: t("A Chrome extension to transform characters written in the Esperanto 'x-system' into Esperanto characters while typing."),
         tech: "JavaScript, Chrome Extension",
         links: {
           demo: "https://chrome.google.com/webstore/detail/esperaboard-esperanto-x-s/nkgbomaneihlabdhjihdhpdlehahahoc",
@@ -162,7 +163,7 @@ export const projectsData: ProjectSection[] = [
       },
       {
         name: "Tic-Tac-Too",
-        description: "AI tic-tac-toe bot built with TensorFlow.js. Built as a teenager while learning about ML.",
+        description: t("AI tic-tac-toe bot built with TensorFlow.js. Built as a teenager while learning about ML."),
         tech: "JavaScript, TensorFlow.js, AI",
         links: {
           demo: "https://tictactoe.bengubler.com/",
@@ -171,3 +172,4 @@ export const projectsData: ProjectSection[] = [
     ],
   },
 ];
+};

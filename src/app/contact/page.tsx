@@ -1,53 +1,64 @@
 import { getColorByIndex } from "@/lib/colors";
 import type { Metadata } from "next";
+import { T } from "gt-next";
+import { getGT } from "gt-next/server";
 
-export const metadata: Metadata = {
-  title: "Contact - Ben Gubler",
-  description:
-    "Get in touch with me for collaborations, questions, or just to say hello.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getGT();
 
-export default function ContactPage() {
+  return {
+    title: t("Contact - Ben Gubler"),
+    description: t(
+      "Get in touch with me for collaborations, questions, or just to say hello."
+    ),
+  };
+}
+
+export default async function ContactPage() {
+  const t = await getGT();
+  
   const contactMethods = [
     {
-      name: "Email",
+      name: t("Email"),
       value: "hello [at] bengubler [dot] com",
       href: null,
-      description: "Best for business inquiries and longer conversations",
+      description: t("Best for business inquiries and longer conversations"),
     },
     {
-      name: "X (Twitter)",
+      name: t("X (Twitter)"),
       value: "@bgub_",
       href: "https://x.com/bgub_",
-      description: "Follow me for quick updates and tech discussions",
+      description: t("Follow me for quick updates and tech discussions"),
     },
     {
-      name: "LinkedIn",
+      name: t("LinkedIn"),
       value: "Ben Gubler",
       href: "https://www.linkedin.com/in/ben-gubler/",
-      description: "Professional network and career-related discussions",
+      description: t("Professional network and career-related discussions"),
     },
     {
-      name: "GitHub",
+      name: t("GitHub"),
       value: "bgub",
       href: "https://github.com/bgub",
-      description: "Check out my open source projects and contributions",
+      description: t("Check out my open source projects and contributions"),
     },
   ];
 
   return (
     <div className="space-y-12">
       {/* Header */}
-      <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          Contact
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-          I'm always interested in connecting with fellow developers, discussing
-          new ideas, or exploring potential collaborations. Feel free to reach
-          out!
-        </p>
-      </header>
+      <T>
+        <header className="space-y-4">
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            Contact
+          </h1>
+          <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+            I'm always interested in connecting with fellow developers, discussing
+            new ideas, or exploring potential collaborations. Feel free to reach
+            out!
+          </p>
+        </header>
+      </T>
 
       {/* Contact Methods */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

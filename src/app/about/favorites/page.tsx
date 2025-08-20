@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getGT } from "gt-next/server";
+import { T, useGT } from "gt-next";
 
 type FavoriteItem = {
   name: string;
@@ -14,18 +16,21 @@ type FavoriteSection = {
   subsections: FavoriteSubsection[];
 };
 
-export const metadata: Metadata = {
-  title: "Favorites - Ben Gubler",
-  description:
-    "Ben Gubler's favorite books, movies, and personal recommendations.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getGT();
+  
+  return {
+    title: t("Favorites - Ben Gubler"),
+    description: t("Ben Gubler's favorite books, movies, and personal recommendations."),
+  };
+}
 
-const favorites: FavoriteSection[] = [
+const getFavorites = (t: (content: string) => string): FavoriteSection[] => [
   {
-    category: "Books",
+    category: t("Books"),
     subsections: [
       {
-        title: "Classics",
+        title: t("Classics"),
         items: [
           { name: "The Brothers Karamazov" },
           { name: "The Death of Ivan Ilyich" },
@@ -41,7 +46,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "Faith",
+        title: t("Faith"),
         items: [
           { name: "The Book of Mormon" },
           { name: "The Bible" },
@@ -50,7 +55,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "Fantasy",
+        title: t("Fantasy"),
         items: [
           { name: "The Lord of the Rings" },
           { name: "The Stormlight Archive" },
@@ -59,7 +64,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "Other",
+        title: t("Other"),
         items: [
           { name: "The Hiding Place" },
           { name: "Just Mercy" },
@@ -69,10 +74,10 @@ const favorites: FavoriteSection[] = [
     ],
   },
   {
-    category: "Movies",
+    category: t("Movies"),
     subsections: [
       {
-        title: "American",
+        title: t("American"),
         items: [
           { name: "Fiddler on the Roof" },
           { name: "A River Runs Through It" },
@@ -82,7 +87,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "International",
+        title: t("International"),
         items: [
           { name: "Jojo Rabbit" },
           { name: "Hunt for the Wilderpeople" },
@@ -94,15 +99,22 @@ const favorites: FavoriteSection[] = [
 ];
 
 export default function FavoritesPage() {
+  const t = useGT();
+  const favorites = getFavorites(t);
+  
   return (
     <div className="space-y-12">
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          Favorites
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Books, movies, and other things I love and recommend.
-        </p>
+        <T>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            Favorites
+          </h1>
+        </T>
+        <T>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Books, movies, and other things I love and recommend.
+          </p>
+        </T>
       </header>
 
       {favorites.map((section) => (

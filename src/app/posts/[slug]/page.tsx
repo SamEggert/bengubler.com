@@ -12,6 +12,8 @@ import { allPosts } from "content-collections";
 import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
 import { notFound } from "next/navigation";
+import { T } from "gt-next";
+import { getGT } from "gt-next/server";
 
 import { ClientTOC } from "./client-toc";
 
@@ -32,8 +34,9 @@ export async function generateMetadata({
   const post = allPosts.find((p) => p.slug === slug);
 
   if (!post) {
+    const t = await getGT();
     return {
-      title: "Post Not Found",
+      title: t("Post Not Found"),
     };
   }
 
@@ -116,7 +119,7 @@ export default async function PostPage({
             href="/posts"
             className="hover:text-foreground transition-colors"
           >
-            Posts
+            <T>Posts</T>
           </Link>
           <span className="mx-2">›</span>
           <span>{post.title}</span>
@@ -143,7 +146,7 @@ export default async function PostPage({
                 <>
                   <span>•</span>
                   <span>
-                    Updated{" "}
+                    <T>Updated </T>
                     {post.lastUpdated.toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "short",
@@ -159,7 +162,7 @@ export default async function PostPage({
             >
               {post.title}
               {post.archived && (
-                <span className="text-muted-foreground"> (archived)</span>
+                <span className="text-muted-foreground"><T> (archived)</T></span>
               )}
             </h1>
           </div>
