@@ -2,12 +2,15 @@
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { navigation } from "@/lib/navigation";
+import { LocaleSelector, useGT, useMessages } from "gt-next";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export function Sidebar() {
   const pathname = usePathname();
+  const gt = useGT();
+  const m = useMessages();
 
   return (
     <div className="hidden md:fixed md:inset-y-0 md:z-50 md:flex md:w-64 md:flex-col">
@@ -18,7 +21,7 @@ export function Sidebar() {
             <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-border/20 group-hover:ring-border/40 transition-all">
               <Image
                 src="/bengubler.jpg"
-                alt="Profile photo"
+                alt={gt("Profile photo")}
                 width={48}
                 height={48}
                 className="object-cover"
@@ -66,7 +69,7 @@ export function Sidebar() {
                         className="h-5 w-5 shrink-0"
                         aria-hidden="true"
                       />
-                      {item.name}
+                      {m(item.name)}
                     </Link>
                   </li>
                 );
@@ -74,9 +77,10 @@ export function Sidebar() {
             </ul>
           </nav>
         </div>
-        {/* Theme Toggle */}
-        <div className="px-6 pb-6">
+        {/* Theme Toggle and Locale Selector */}
+        <div className="px-6 pb-6 space-y-3">
           <ThemeToggle />
+          <LocaleSelector />
         </div>
       </div>
     </div>

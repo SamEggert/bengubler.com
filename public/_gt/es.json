@@ -1,0 +1,632 @@
+{
+  "cdceac6a8ba205a3": "La página que buscas no existe.",
+  "f41ea186c275b56e": "Acerca de",
+  "262b6fc7fc66c7de": "Ver todo",
+  "f5f2092b85074291": "desarrollador web",
+  "c59720248f69d5aa": "Recomendado",
+  "e5bed3790b073bcd": "Actualmente en prácticas en Vercel",
+  "bc626d44c6438c16": [
+    {
+      "t": "svg",
+      "i": 1,
+      "c": {
+        "t": "path",
+        "i": 2
+      }
+    },
+    "RSS"
+  ],
+  "2b07b7656f564e82": "tokka-bench",
+  "d7899ed4822e5ab1": "Mi pila",
+  "70dd984db771852a": "Proyectos - Ben Gubler",
+  "7bb63aca5f4d7144": "No se pudo obtener la explicación",
+  "10d7d44cb55d1617": "Compartir en {platform}",
+  "4314e052a3524c51": "Favoritos",
+  "d6fbdc3005136dfa": {
+    "t": "Button",
+    "i": 1,
+    "c": {
+      "t": "Link",
+      "i": 2,
+      "c": "Ir al inicio"
+    }
+  },
+  "8bf65a425f50d140": "Luz",
+  "b305d06d0af683b4": "Página no encontrada - Ben Gubler",
+  "e1753ab0ce7d5975": "LinkedIn",
+  "b50c41465e5408b3": "Correo electrónico",
+  "faacfe0817aee2f5": {
+    "t": "DialogDescription",
+    "i": 1,
+    "c": "Hacer que los temas complejos sean simples"
+  },
+  "21b9a8bf7d73d803": "Tema del sistema",
+  "4a73344dd83b8f0e": {
+    "t": "h1",
+    "i": 1,
+    "c": "Proyectos"
+  },
+  "217a321934b935db": {
+    "t": "h2",
+    "i": 1,
+    "c": "Página no encontrada"
+  },
+  "95f506e43b9b3265": "Publicación no encontrada - Ben Gubler",
+  "4add1139ae8ec5c1": "Contacto",
+  "6aa37389c540a0b2": "npm a yarn",
+  "e868aa355d5de11c": "Sin cuerpo de respuesta",
+  "4835968fd99ecdc2": {
+    "t": "h4",
+    "i": 1,
+    "c": "Explicación sencilla"
+  },
+  "cd87582257eec44a": {
+    "t": "h3",
+    "i": 1,
+    "c": "Compartir esta publicación"
+  },
+  "8313f3c1e394a316": "Ideal para consultas empresariales y conversaciones más largas",
+  "77f1f1d5e82ddb68": "Twitter",
+  "e3a0b3dcbf2ec893": "aprendizaje automático",
+  "ac9dd72983848c83": {
+    "t": "p",
+    "i": 1,
+    "c": "Soy Ben — estudiante en BYU, donde estudio Matemáticas Aplicadas y Árabe. Desarrollo bibliotecas de código abierto, aplicaciones web y herramientas de IA. Actualmente hago prácticas en Vercel."
+  },
+  "6662bfef4fbe8763": "Abrir menú",
+  "ade50401b1396de9": "Publicaciones",
+  "eb4c23226464ede2": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "Me llamo Ben, pero quizá me conozcas por mi nombre de usuario en GitHub, ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "@bgub"
+      },
+      "."
+    ]
+  },
+  "bad9b1c9be9e960a": {
+    "t": "h1",
+    "i": 1,
+    "c": "¡Hola! Ahoj! Привет! مرحبا! 👋"
+  },
+  "e6d86a912aea1aa4": {
+    "t": "h1",
+    "i": 1,
+    "c": "Aprendizaje de idiomas"
+  },
+  "6c9b9dc3b6bc4b97": "La publicación que buscas no existe.",
+  "a9b1bb5ea856e25c": "Destacado",
+  "678a63d83881ca93": "Copiar contenido sin procesar",
+  "6e8a4f1758b76948": "Red profesional y debates relacionados con la carrera",
+  "fda5c9f6d1d9da06": "Cambiar tema",
+  "de95102c6f770495": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "Consulta mis ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "proyectos"
+      },
+      ", lee mis ",
+      {
+        "t": "Link",
+        "i": 3,
+        "c": "escritos"
+      },
+      " o mira mi ",
+      {
+        "t": "Link",
+        "i": 4,
+        "c": "currículum"
+      },
+      "."
+    ]
+  },
+  "275116dd1bbe1e27": "X (Twitter)",
+  "7e74172900c60360": "Enlace a la sección",
+  "c416e456567fdf39": "mokka",
+  "2755e00e7c4025c0": "TinyLingo",
+  "69a38e8afebf5dd4": "Cerrar menú",
+  "6e71ec1bfb3ad539": "Desarrollo de lenguajes de programación y efectos algebraicos",
+  "2e033faed4816b63": {
+    "t": "p",
+    "i": 1,
+    "c": "Publicaciones antiguas que podrían estar desactualizadas pero aún tienen cierto valor."
+  },
+  "cc77c2b66c79a626": "Pad de chapoteo",
+  "a34bed55aa23f894": "Squirrelly",
+  "2ecf88ef9e8e4259": "Inicio",
+  "28a45948473da7f8": "GitHub",
+  "64e34ec7ead4eebe": "Tema claro",
+  "c60bbea0759db02a": "Una aplicación de aprendizaje de idiomas para mejorar la comprensión. Escucha pódcasts auténticos de hablantes nativos con transcripciones y traducciones generadas por IA.",
+  "81d4f577c1f1ff07": {
+    "t": "h2",
+    "i": 1,
+    "c": "Datos curiosos"
+  },
+  "9a806cc1e5ca8a4a": "Inteligencia artificial",
+  "2e881bd80673c0fa": "Tarjetas de casos en ruso",
+  "f52c29a8ce2d1f99": "Reddit",
+  "cf1dfa31f755ed76": "Evalúe y compare tokenizadores en muchos idiomas con visualizaciones interactivas y análisis.",
+  "1a616ffc2514ec95": {
+    "t": "h1",
+    "i": 1,
+    "c": "Publicaciones"
+  },
+  "3a97742b7f4ff957": {
+    "t": "div",
+    "i": 1,
+    "c": [
+      {
+        "t": "Loader2",
+        "i": 2
+      },
+      {
+        "t": "p",
+        "i": 3,
+        "c": "Leyendo tu publicación del blog..."
+      },
+      {
+        "t": "p",
+        "i": 4,
+        "c": "Desglosándolo en términos simples"
+      }
+    ]
+  },
+  "428fedbd5fc2d3d1": "Proyectos heredados",
+  "efd9775f35548e44": "¡Copiado!",
+  "eab4edac737eba98": {
+    "t": "a",
+    "i": 1,
+    "c": [
+      {
+        "t": "ExternalLink",
+        "i": 2
+      },
+      "Ver markdown sin procesar"
+    ]
+  },
+  "da70affac9781e55": "Aprendizaje de idiomas",
+  "2d5e296989434d34": "Un sitio web integral para practicar las declinaciones de sustantivos en checo, eslovaco y ruso, con ejercicios interactivos.",
+  "1924ba23150a6092": "Explicando...",
+  "239e1d076b1e9abe": "Una extensión de Chrome que convierte, mientras escribes, los caracteres del “sistema x” del esperanto en caracteres del esperanto.",
+  "d2154e244ec0287a": {
+    "t": "p",
+    "i": 1,
+    "c": "Una colección de cosas que he construido a lo largo de los años, desde bibliotecas de código abierto hasta aplicaciones web y extensiones de navegador."
+  },
+  "c71006556cf1328e": {
+    "t": "DialogTitle",
+    "i": 1,
+    "c": [
+      {
+        "t": "Brain",
+        "i": 2
+      },
+      "Explícalo como si tuviera 5 años"
+    ]
+  },
+  "d486259b8271dcc6": "A lightweight JavaScript template engine with support for helpers, partials, filters, etc. The project that helped me get into open source.",
+  "06780520e9f90863": {
+    "t": "p",
+    "i": 1,
+    "c": "Herramientas y recursos que he creado para ayudar con el aprendizaje de idiomas."
+  },
+  "64ade5006b5d1b36": "Rechazar aplicación",
+  "064898550ebaf40b": "Paquete de Pip con herramienta CLI para monitorear el uso de la GPU en contenedores de Docker. Una alternativa minimalista a “nvidia-smi”.",
+  "faa3f67be31bfeca": "Tema oscuro",
+  "3a965260146ebab1": "tokka",
+  "0a43db96a3879d8b": "Convierte entre comandos de la CLI de npm/Yarn/pnpm/bun con compatibilidad con todos los principales gestores de paquetes.",
+  "b710e73c5611e3f4": "Contacto - Ben Gubler",
+  "7fe23b0204df5f61": "Sitio web personal de Ben Gubler. Pasante de desarrollo web en Vercel, estudia IA y lenguas humanas en BYU.",
+  "9263adc2beb9fc18": "IA y Aprendizaje Automático",
+  "5e4fdc8793b93674": {
+    "t": "h2",
+    "i": 1,
+    "c": "Archivado"
+  },
+  "feb481b144af444a": "Reflexiones sobre desarrollo web, IA y crear cosas que importan.",
+  "3ff112a2d57aded1": {
+    "t": "div",
+    "i": 1,
+    "c": [
+      {
+        "t": "Brain",
+        "i": 2
+      },
+      {
+        "t": "p",
+        "i": 3,
+        "c": "¡Listo para simplificar!"
+      },
+      {
+        "t": "p",
+        "i": 4,
+        "c": [
+          "Explicaré \"",
+          {
+            "i": 5,
+            "k": "_gt_value_5",
+            "v": "v"
+          },
+          "\" en términos simples"
+        ]
+      }
+    ]
+  },
+  "8e6afde0f536eee2": {
+    "t": "h1",
+    "i": 1,
+    "c": "Sobre mí"
+  },
+  "def93bda648985e9": "Explícame como si tuviera 5 años",
+  "191061838e1622d2": {
+    "t": "Button",
+    "i": 1,
+    "c": {
+      "t": "Link",
+      "i": 2,
+      "c": "Ver publicaciones"
+    }
+  },
+  "fe04975a9ca7df24": "Biblioteca de cómputo similar a PyTorch para TS/JS usando WebGPU (en desarrollo).",
+  "82d3a80413d6a1c3": "Lectura de 5 min",
+  "1947f94eeedb8b9c": "Una colección de los proyectos de Ben Gubler, desde trabajos destacados hasta compilaciones experimentales.",
+  "afaa0561ba5a8ba7": {
+    "t": "h2",
+    "i": 1,
+    "c": "Publicación no encontrada"
+  },
+  "cc84bfe0ee5d0174": "Proyectos",
+  "b8baaea54c6c1704": "Eta",
+  "2ce262d5ab363438": "Publicaciones - Ben Gubler",
+  "4ea7e037ee1dab24": "Esperaboard",
+  "57df581328929c7a": {
+    "t": "p",
+    "i": 1,
+    "c": "Lo sentimos, la página que buscas no existe o se ha movido."
+  },
+  "4088fbaddc00d228": "Consulta mis proyectos de código abierto y contribuciones",
+  "233fe71d46008091": "Ponte en contacto conmigo para colaboraciones, preguntas o simplemente para saludar.",
+  "c24789fa6ee1226c": "sombra",
+  "374c5518c6ab30e6": "hf_a_mds",
+  "9a5c9a18a1736a01": "Foto de perfil",
+  "4fc74c7fb8c15459": "Convertir conjuntos de datos de HuggingFace al formato MosaicML Streaming (MDS) para un entrenamiento eficiente en la nube.",
+  "6f938d5cbd13aeab": "Comentarios",
+  "ea3bb70a42a500de": "PWA para practicar los patrones de declinación del checo, eslovaco y ruso.",
+  "7224ad670aa82471": "Una extensión de Chrome que convierte tu página de nueva pestaña en un panel personalizable.",
+  "116ab3333ed53b2d": "Tres en Raya",
+  "d9a4d6e70a27f799": "Lo siento, no puedo explicar esto ahora mismo. ¡Vuelve a intentarlo!",
+  "0704279d82328bbd": {
+    "t": "h1",
+    "i": 1,
+    "c": "Contacto"
+  },
+  "c3ae9cdbdb6ac881": "Comenzar explicación",
+  "aa600fbbd0a9d686": "Configuración inicial de Nix para macOS con valores predeterminados sensatos y documentación.",
+  "582c94a306553566": "Explicar de nuevo",
+  "a0c70f7a2b48c067": {
+    "t": "h2",
+    "i": 1,
+    "c": "Publicaciones recientes"
+  },
+  "a03e4c1348ad9ba8": "Sistema",
+  "78344b60f407928e": "Otro",
+  "d604bc5cf3386f00": "Oscuro",
+  "0e413a5825e314de": {
+    "t": "p",
+    "i": 1,
+    "c": "Actualmente soy estudiante en la Brigham Young University en Provo, donde curso una especialidad en ACME (Matemáticas Aplicadas y Computacionales) y un minor en árabe. También soy asistente de investigación en el PCCL (Perception, Control, and Cognition Lab) en BYU, donde estudio aplicaciones novedosas de la inteligencia artificial y el procesamiento del lenguaje natural."
+  },
+  "6d1c840177d6e865": {
+    "t": "p",
+    "i": 1,
+    "c": "Estudio aprendizaje automático e idiomas (humanos). En mi tiempo libre, me gusta crear sitios web y bibliotecas de código abierto. Probablemente publique sobre todo lo anterior de vez en cuando."
+  },
+  "b0e41f1527b81cd3": {
+    "t": "p",
+    "i": 1,
+    "c": "Siempre me interesa conectar con otros desarrolladores, debatir nuevas ideas o explorar posibles colaboraciones. ¡No dudes en ponerte en contacto!"
+  },
+  "6d57c627b689ce3a": "Noticias de Hacker",
+  "0ee81746110ea465": "Tarjetas imprimibles de casos para memorizar rápidamente y con eficacia los patrones de declinación de sustantivos checos.",
+  "2096e678e9ff17b6": "Herramientas de código abierto",
+  "26cc9442083084ff": "Desarrollo de SO y programación de sistemas",
+  "ec8e528936b96b22": "Seguridad",
+  "f15d0c49904c6aa5": {
+    "t": "Button",
+    "i": 1,
+    "c": {
+      "t": "Link",
+      "i": 2,
+      "c": "Explorar todas las publicaciones"
+    }
+  },
+  "5d1a87ebd0ba9c9e": "Acerca de Ben Gubler",
+  "0c929cb89a81866c": "Aprendizaje de idiomas",
+  "d8b46c0127d88a10": "Obtén más información sobre Ben Gubler, sus estudios en IA, lenguas y su trabajo como desarrollador web.",
+  "aa3f99e380d00c4f": "Sígueme para obtener actualizaciones rápidas y debates sobre tecnología",
+  "1f1b4086cadac9b6": "Aprendizaje de idiomas - Ben Gubler",
+  "4373e32d3674bcd0": "Herramientas y recursos para aprender idiomas, incluidas aplicaciones de práctica de declinaciones y más.",
+  "820298311342f8d7": "Kit de herramientas para crear Small Language Models (SLMs) fácilmente, dirigido a investigadores (trabajo en progreso).",
+  "ca744e725e390110": "Tarjetas de casos checos",
+  "8d5bef805f152308": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "Explora ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "mi stack"
+      },
+      " de tecnologías y herramientas que utilizo, navega por mis ",
+      {
+        "t": "Link",
+        "i": 3,
+        "c": "favoritos"
+      },
+      ", incluidos los libros y películas que me encantan, o mira lo que he ",
+      {
+        "t": "Link",
+        "i": 4,
+        "c": "recomendado"
+      },
+      " en cursos, artículos y recursos de aprendizaje. Para conocer mi experiencia profesional, puedes ver mi ",
+      {
+        "t": "Link",
+        "i": 5,
+        "c": "currículum"
+      },
+      "."
+    ]
+  },
+  "dbd5ab298a023ab8": "Un motor de plantillas JS incrustado y rápido. Ampliamente utilizado, con más de 1.5K estrellas en GitHub y ~1M de descargas semanales.",
+  "daad66bd542f4ac1": "nix-macos-starter",
+  "5d7a168f112ec5d5": "Mi sitio web personal y blog donde escribo sobre IA, entrenamiento distribuido y aprendizaje de idiomas.",
+  "97c326fd40fc8abd": "Tarjetas imprimibles de casos para memorizar de forma rápida y eficaz los patrones de declinación de sustantivos en ruso.",
+  "0bb058038c571a69": "Kit de herramientas para entrenar tokenizadores BPE en divisiones de datos personalizadas con opciones avanzadas de configuración.",
+  "7be30fc926cb3b77": "Bot de tres en raya con IA creado con TensorFlow.js. Desarrollado en la adolescencia mientras aprendía sobre ML.",
+  "7673740bf82f4276": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "No se encontraron publicaciones con la etiqueta ",
+      {
+        "t": "span",
+        "i": 2,
+        "c": [
+          "#",
+          {
+            "i": 3,
+            "k": "_gt_value_3",
+            "v": "v"
+          }
+        ]
+      },
+      "."
+    ]
+  },
+  "5d4e690fa23c5a3a": {
+    "t": "p",
+    "i": 1,
+    "c": "Reflexiones sobre el desarrollo web, la IA y la creación de cosas que importan."
+  },
+  "5c24a8953aebc532": "bengubler.com",
+  "1758b3d1d63f639f": {
+    "t": "p",
+    "i": 1,
+    "c": "Lo sentimos, la publicación que estás buscando no existe o ha sido movida."
+  },
+  "37882905c4941c4c": "GOM",
+  "d006c44856493996": "Informática",
+  "c2a07f3d5a77e750": "Sitio web personal de Ben Gubler. Pasante de desarrollo web en Vercel, estudiando IA y lenguas humanas en BYU. Reflexiones sobre desarrollo web, IA y crear cosas que importen.",
+  "05bbfe728618dc37": {
+    "t": "ul",
+    "i": 1,
+    "c": [
+      {
+        "t": "li",
+        "i": 2,
+        "c": "Me apasiona el aprendizaje de idiomas: hablo inglés, checo y eslovaco, y actualmente estoy aprendiendo ruso y árabe."
+      },
+      {
+        "t": "li",
+        "i": 3,
+        "c": "¡Me encanta pasar tiempo al aire libre! Mochilear, pescar y practicar ciclismo de montaña son algunos de mis pasatiempos favoritos."
+      },
+      {
+        "t": "li",
+        "i": 4,
+        "c": "Disfruto de la gran literatura, tanto contemporánea como clásica."
+      }
+    ]
+  },
+  "98931a83736430a1": "Sitio web impulsado por IA para aprender idiomas con lecciones personalizadas y sesiones de práctica interactivas.",
+  "c3f6f3040689b349": {
+    "t": "h3",
+    "i": 1,
+    "c": "Ver sin procesar (para LLMs)"
+  },
+  "bc79b8827bd6278c": "Libros",
+  "0cfbf4677a02b4fe": "Aplicaciones",
+  "382eff4355fc0871": {
+    "t": "h1",
+    "i": 1,
+    "c": "Mi pila"
+  },
+  "c480d98c240a3a0f": "El contenido es obligatorio",
+  "3966ae164fc4fb1f": "I built case cards for Czech so you don't have to.",
+  "880b21ecb28d7479": "Sistemas operativos",
+  "77d68abb75acf8cd": "Publicación no encontrada",
+  "8c74857ecf98c255": "Desarrollo",
+  "47ed76f7077e0280": "Recomendado - Ben Gubler",
+  "23833883c2b7d83b": "Please explain this blog post in simple terms:\\n\\n{content}",
+  "2f4b57fb59c746d0": "Programación de GPU y de alto rendimiento",
+  "062756dc4fdf55bf": "Interpretabilidad",
+  "14951deeb9fd1a80": "Aprendizaje de idiomas",
+  "6601f653ec09b078": "Clásicos",
+  "6cf3a79976b7d2d2": "Escritorio y terminal",
+  "762da2d8b92c643b": "Toki Pona",
+  "9455d38b47db2f4d": {
+    "t": "span",
+    "i": 1,
+    "c": " (archivado)"
+  },
+  "062a8c8bf68039ab": "Fantasía",
+  "c96c6913115e475e": "Hardware",
+  "3f96a7686163d260": {
+    "t": "h1",
+    "i": 1,
+    "c": "Favoritos"
+  },
+  "7cd96c52865feaa9": {
+    "t": "h1",
+    "i": 1,
+    "c": "Tarjetas de casos en ruso"
+  },
+  "53b5f7c376481390": "Copiar código al portapapeles",
+  "05e4896829f2e7b6": "Software",
+  "bc959b56a841666f": "Favoritos - Ben Gubler",
+  "aab25fba56518455": "Lingüística",
+  "402715cd330d167a": "Computadoras",
+  "56354511d24cdb32": {
+    "t": "p",
+    "i": 1,
+    "c": "Libros, películas y otras cosas que amo y recomiendo."
+  },
+  "cb22dfb847421478": "Actualizado",
+  "e999020212037bfa": {
+    "t": "p",
+    "i": 1,
+    "c": "Tecnologías, aplicaciones y herramientas que uso para el desarrollo y la productividad."
+  },
+  "27c04964a9ee9e77": "Fe",
+  "e5cff5481ca8546c": "Divertido e interesante",
+  "a7a6f6e342ca4342": {
+    "t": "h3",
+    "i": 1,
+    "c": "Tabla de contenidos"
+  },
+  "fbe4f10390c772d7": "Diseño de conlangs",
+  "f706057a0ef052ff": {
+    "t": "p",
+    "i": 1,
+    "c": "¡Dedique muchas horas a crear esto! Imprímelo y memorizarás los patrones de declinación del ruso en muy poco tiempo."
+  },
+  "e7c0553f70c9ca10": "Internacional",
+  "9090d8c41e669be7": "Productividad y vida",
+  "8e96b87ad3aa0700": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "También puede interesarle mi ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "sitio web para practicar las declinaciones checas/rusas"
+      },
+      " o mis ",
+      {
+        "t": "Link",
+        "i": 3,
+        "c": "cartas de casos checos"
+      },
+      "."
+    ]
+  },
+  "fdd8a5b7dce4c10c": {
+    "t": "h2",
+    "i": 1,
+    "c": "Tarjeta de caso"
+  },
+  "db1fe4831da96145": {
+    "t": "p",
+    "i": 1,
+    "c": "¡Dedique muchas horas a crear estos! Imprímelos y memorizarás los patrones de declinación del checo en muy poco tiempo."
+  },
+  "daf080584b6c4e5f": {
+    "t": "span",
+    "i": 1,
+    "c": "Cerrar"
+  },
+  "8de6fbc525168418": {
+    "t": "p",
+    "i": 1,
+    "c": "Una colección seleccionada de enlaces y recursos útiles que he encontrado valiosos."
+  },
+  "aa2d9f8e9ea84f58": "Construí tarjetas de casos para ruso para que tú no tengas que hacerlo.",
+  "f1c6f3c2d9e4a392": {
+    "t": "h2",
+    "i": 1,
+    "c": "Tarjeta de caso básica"
+  },
+  "8234751d76090b58": "Varios",
+  "ce4f5e5113604fa9": "Temas y aplicaciones especializadas",
+  "18b7f8e2dee69d61": "Publicación no encontrada",
+  "f52129a3f95b5597": "Recursos de aprendizaje",
+  "41d2f4230d1d960e": {
+    "t": "h1",
+    "i": 1,
+    "c": "Tarjetas de Casos Checos"
+  },
+  "ef1e481ac2b7ac31": "Estadounidense",
+  "c18af923a81d97db": "Matemáticas y métodos formales",
+  "cd8d0c77a410efb9": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "Nota: esto no se mostrará correctamente en dispositivos móviles: ve ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "aquí"
+      },
+      " para ver y descargar el PDF en una ventana nueva."
+    ]
+  },
+  "a04daf17e3be1edc": "Periféricos",
+  "5c09252a83b0de9b": {
+    "t": "h2",
+    "i": 1,
+    "c": "Tarjeta de caso avanzado"
+  },
+  "a9ccfb1510066ff2": "Una colección seleccionada de enlaces y recursos útiles que Ben Gubler ha encontrado valiosos.",
+  "600789898ab6a2f9": {
+    "t": "p",
+    "i": 1,
+    "c": [
+      "También puede interesarte mi ",
+      {
+        "t": "Link",
+        "i": 2,
+        "c": "sitio web para practicar las declinaciones de checo/ruso"
+      },
+      " o mis ",
+      {
+        "t": "Link",
+        "i": 3,
+        "c": "tarjetas de casos en ruso"
+      },
+      "."
+    ]
+  },
+  "c7a2323b7e48530a": "Mi stack - Ben Gubler",
+  "dc94ea51cf0b8c7a": "Películas",
+  "6f83fb5bebf33e82": "Libros, películas y recomendaciones personales favoritas de Ben Gubler.",
+  "a20c7af31a16306f": "Tecnologías, aplicaciones y herramientas que Ben Gubler utiliza para el desarrollo y la productividad.",
+  "aa5bfb3c14b0a681": "Aprender los conceptos básicos",
+  "772e15e4f2f20a76": "Demostración de teoremas",
+  "274172cd9b242e6a": {
+    "t": "h1",
+    "i": 1,
+    "c": "Recomendado"
+  },
+  "356fdf32f4af59c1": "Eres experto en explicar temas complejos con palabras simples y divertidas. Explica la siguiente entrada de blog como si estuvieras hablando con un niño de 5 años: - Usa palabras simples y oraciones cortas - Incluye analogías y comparaciones divertidas con las que pueda identificarse - Sé entusiasta y motivador - Divide las ideas complejas en pedacitos fáciles de entender - Hazlo atractivo pero preciso Título: \"{title}\""
+}

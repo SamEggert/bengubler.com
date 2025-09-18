@@ -3,6 +3,7 @@
 import { MobileThemeToggle } from "@/components/mobile-theme-toggle";
 import { Button } from "@/components/ui/button";
 import { navigation } from "@/lib/navigation";
+import { LocaleSelector, useGT, useMessages } from "gt-next";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,6 +14,8 @@ export function MobileNav() {
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const gt = useGT();
+  const m = useMessages();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -57,7 +60,7 @@ export function MobileNav() {
         aria-controls="mobile-menu-popover"
       >
         {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
+        <span className="sr-only">{isOpen ? gt("Close menu") : gt("Open menu")}</span>
       </Button>
 
       {/* Popover Menu */}
@@ -91,16 +94,17 @@ export function MobileNav() {
                     onClick={() => setIsOpen(false)}
                   >
                     <item.icon className="h-4 w-4 shrink-0" />
-                    {item.name}
+                    {m(item.name)}
                   </Link>
                 </div>
               );
             })}
           </div>
 
-          {/* Theme Toggle - Bottom */}
-          <div className="flex justify-start pt-4 mt-4 border-t border-border/40">
+          {/* Theme Toggle and Locale Selector - Bottom */}
+          <div className="flex justify-between items-center pt-4 mt-4 border-t border-border/40">
             <MobileThemeToggle onThemeChange={() => setIsOpen(false)} />
+            <LocaleSelector />
           </div>
         </div>
       )}

@@ -2,18 +2,20 @@
 
 import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
+import { useGT } from "gt-next";
 
 const Giscus = dynamic(() => import("@giscus/react"), { ssr: false });
 
 export function Comments() {
   const { resolvedTheme } = useTheme(); // "dark" | "light"
+  const gt = useGT();
 
   return (
     <div className="mt-10">
       <Giscus
         repo="bgub/bengubler.com"
         repoId="R_kgDOMDxe6w"
-        category="Comments"
+        category={gt("Comments")}
         categoryId="DIC_kwDOMDxe684CrcJf"
         mapping="pathname"
         strict="1"
