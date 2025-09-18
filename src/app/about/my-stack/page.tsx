@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getGT } from "gt-next/server";
+import { T } from "gt-next";
+import { msg, useMessages } from "gt-next";
 
 type FavoriteItem = {
   name: string;
@@ -16,25 +19,30 @@ type FavoriteSection = {
   subsections: FavoriteSubsection[];
 };
 
-export const metadata: Metadata = {
-  title: "My Stack - Ben Gubler",
-  description:
-    "Technologies, apps, and tools that Ben Gubler uses for development and productivity.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const gt = await getGT();
+  
+  return {
+    title: gt("My Stack - Ben Gubler"),
+    description: gt(
+      "Technologies, apps, and tools that Ben Gubler uses for development and productivity."
+    ),
+  };
+}
 
 const stack: FavoriteSection[] = [
   {
-    category: "Hardware",
+    category: msg("Hardware"),
     subsections: [
       {
-        title: "Computers",
+        title: msg("Computers"),
         items: [
           { name: "MacBook Pro (work)" },
           { name: "Dell XPS 15 (personal)" },
         ],
       },
       {
-        title: "Peripherals",
+        title: msg("Peripherals"),
         items: [
           { name: "NuPhy Air75 V3 Keyboard" },
           { name: "MX Master 3S Mouse" },
@@ -43,14 +51,14 @@ const stack: FavoriteSection[] = [
     ],
   },
   {
-    category: "Software",
+    category: msg("Software"),
     subsections: [
       {
-        title: "Operating Systems",
+        title: msg("Operating Systems"),
         items: [{ name: "macOS" }, { name: "Fedora Linux" }],
       },
       {
-        title: "Desktop & Terminal",
+        title: msg("Desktop & Terminal"),
         items: [
           { name: "GNOME Desktop" },
           { name: "Cosmic Desktop (occasionally)" },
@@ -58,16 +66,16 @@ const stack: FavoriteSection[] = [
         ],
       },
       {
-        title: "Development",
+        title: msg("Development"),
         items: [{ name: "Zed w/ Vim keybindings" }, { name: "Zen Browser" }],
       },
     ],
   },
   {
-    category: "Apps",
+    category: msg("Apps"),
     subsections: [
       {
-        title: "Language Learning",
+        title: msg("Language Learning"),
         items: [
           { name: "Anki", link: "https://apps.ankiweb.net" },
           { name: "Readlang", link: "https://readlang.com" },
@@ -77,7 +85,7 @@ const stack: FavoriteSection[] = [
         ],
       },
       {
-        title: "Productivity & Life",
+        title: msg("Productivity & Life"),
         items: [
           { name: "Todoist" },
           { name: "Obsidian" },
@@ -91,28 +99,34 @@ const stack: FavoriteSection[] = [
 ];
 
 export default function MyStackPage() {
+  const m = useMessages();
+  
   return (
     <div className="space-y-12">
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          My Stack
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Technologies, apps, and tools I use for development and productivity.
-        </p>
+        <T>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            My Stack
+          </h1>
+        </T>
+        <T>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Technologies, apps, and tools I use for development and productivity.
+          </p>
+        </T>
       </header>
 
       {stack.map((section) => (
-        <section key={section.category} className="space-y-3">
+        <section key={m(section.category)} className="space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            {section.category}
+            {m(section.category)}
           </h2>
           <div className="space-y-2">
             {section.subsections.map((subsection) => (
-              <div key={subsection.title} className="space-y-1">
+              <div key={m(subsection.title)} className="space-y-1">
                 <p className="text-muted-foreground leading-relaxed">
                   <span className="font-bold text-foreground">
-                    {subsection.title}
+                    {m(subsection.title)}
                   </span>
                   :{" "}
                   {subsection.items.map((item, index) => (

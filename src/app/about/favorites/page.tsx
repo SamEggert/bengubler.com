@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { getGT } from "gt-next/server";
+import { T } from "gt-next";
+import { msg, useMessages } from "gt-next";
 
 type FavoriteItem = {
   name: string;
@@ -14,18 +17,23 @@ type FavoriteSection = {
   subsections: FavoriteSubsection[];
 };
 
-export const metadata: Metadata = {
-  title: "Favorites - Ben Gubler",
-  description:
-    "Ben Gubler's favorite books, movies, and personal recommendations.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const gt = await getGT();
+  
+  return {
+    title: gt("Favorites - Ben Gubler"),
+    description: gt(
+      "Ben Gubler's favorite books, movies, and personal recommendations."
+    ),
+  };
+}
 
 const favorites: FavoriteSection[] = [
   {
-    category: "Books",
+    category: msg("Books"),
     subsections: [
       {
-        title: "Classics",
+        title: msg("Classics"),
         items: [
           { name: "The Brothers Karamazov" },
           { name: "The Death of Ivan Ilyich" },
@@ -41,7 +49,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "Faith",
+        title: msg("Faith"),
         items: [
           { name: "The Book of Mormon" },
           { name: "The Bible" },
@@ -50,7 +58,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "Fantasy",
+        title: msg("Fantasy"),
         items: [
           { name: "The Lord of the Rings" },
           { name: "The Stormlight Archive" },
@@ -59,7 +67,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "Other",
+        title: msg("Other"),
         items: [
           { name: "The Hiding Place" },
           { name: "Just Mercy" },
@@ -69,10 +77,10 @@ const favorites: FavoriteSection[] = [
     ],
   },
   {
-    category: "Movies",
+    category: msg("Movies"),
     subsections: [
       {
-        title: "American",
+        title: msg("American"),
         items: [
           { name: "Fiddler on the Roof" },
           { name: "A River Runs Through It" },
@@ -82,7 +90,7 @@ const favorites: FavoriteSection[] = [
         ],
       },
       {
-        title: "International",
+        title: msg("International"),
         items: [
           { name: "Jojo Rabbit" },
           { name: "Hunt for the Wilderpeople" },
@@ -94,28 +102,34 @@ const favorites: FavoriteSection[] = [
 ];
 
 export default function FavoritesPage() {
+  const m = useMessages();
+  
   return (
     <div className="space-y-12">
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          Favorites
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Books, movies, and other things I love and recommend.
-        </p>
+        <T>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            Favorites
+          </h1>
+        </T>
+        <T>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Books, movies, and other things I love and recommend.
+          </p>
+        </T>
       </header>
 
       {favorites.map((section) => (
-        <section key={section.category} className="space-y-3">
+        <section key={m(section.category)} className="space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            {section.category}
+            {m(section.category)}
           </h2>
           <div className="space-y-2">
             {section.subsections.map((subsection) => (
-              <div key={subsection.title} className="space-y-1">
+              <div key={m(subsection.title)} className="space-y-1">
                 <p className="text-muted-foreground leading-relaxed">
                   <span className="font-bold text-foreground">
-                    {subsection.title}
+                    {m(subsection.title)}
                   </span>
                   :{" "}
                   {subsection.items.map((item, index) => (

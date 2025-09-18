@@ -1,37 +1,45 @@
 import { getColorByIndex } from "@/lib/colors";
 import type { Metadata } from "next";
+import { T, msg, useMessages } from "gt-next";
+import { getGT } from "gt-next/server";
 
-export const metadata: Metadata = {
-  title: "Contact - Ben Gubler",
-  description:
-    "Get in touch with me for collaborations, questions, or just to say hello.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const gt = await getGT();
+  
+  return {
+    title: gt("Contact - Ben Gubler"),
+    description: gt(
+      "Get in touch with me for collaborations, questions, or just to say hello."
+    ),
+  };
+}
 
 export default function ContactPage() {
+  const m = useMessages();
   const contactMethods = [
     {
-      name: "Email",
+      name: msg("Email"),
       value: "hello [at] bengubler [dot] com",
       href: null,
-      description: "Best for business inquiries and longer conversations",
+      description: msg("Best for business inquiries and longer conversations"),
     },
     {
-      name: "X (Twitter)",
+      name: "X (Twitter)", // Brand name - keep static
       value: "@bgub_",
       href: "https://x.com/bgub_",
-      description: "Follow me for quick updates and tech discussions",
+      description: msg("Follow me for quick updates and tech discussions"),
     },
     {
-      name: "LinkedIn",
+      name: "LinkedIn", // Brand name - keep static
       value: "Ben Gubler",
       href: "https://www.linkedin.com/in/ben-gubler/",
-      description: "Professional network and career-related discussions",
+      description: msg("Professional network and career-related discussions"),
     },
     {
-      name: "GitHub",
+      name: "GitHub", // Brand name - keep static
       value: "bgub",
       href: "https://github.com/bgub",
-      description: "Check out my open source projects and contributions",
+      description: msg("Check out my open source projects and contributions"),
     },
   ];
 
@@ -39,14 +47,18 @@ export default function ContactPage() {
     <div className="space-y-12">
       {/* Header */}
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          Contact
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-          I'm always interested in connecting with fellow developers, discussing
-          new ideas, or exploring potential collaborations. Feel free to reach
-          out!
-        </p>
+        <T>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            Contact
+          </h1>
+        </T>
+        <T>
+          <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+            I'm always interested in connecting with fellow developers, discussing
+            new ideas, or exploring potential collaborations. Feel free to reach
+            out!
+          </p>
+        </T>
       </header>
 
       {/* Contact Methods */}
@@ -75,7 +87,7 @@ export default function ContactPage() {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <h3 className="text-lg font-semibold text-foreground group-hover:text-foreground/90 transition-colors">
-                    {method.name}
+                    {typeof method.name === 'string' ? method.name : m(method.name)}
                   </h3>
                   {method.href && (
                     <svg
@@ -97,7 +109,7 @@ export default function ContactPage() {
                   {method.value}
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  {method.description}
+                  {m(method.description)}
                 </p>
               </div>
             </Component>

@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Project } from "@/lib/projects";
+import { useMessages, useGT } from "gt-next";
 
 interface ProjectListProps {
   projects: Project[];
 }
 
 export function ProjectList({ projects }: ProjectListProps) {
+  const m = useMessages();
+  const gt = useGT();
+  
   return (
     <div className="space-y-4">
       {projects.map((project, index) => (
@@ -20,13 +24,13 @@ export function ProjectList({ projects }: ProjectListProps) {
                     rel="noopener noreferrer"
                     className="underline hover:no-underline"
                   >
-                    {project.name}
+                    {m(project.name)}
                   </Link>
                 ) : (
-                  project.name
+                  m(project.name)
                 )}
               </span>{" "}
-              - {project.description}
+              - {m(project.description)}
             </p>
             <p className="text-sm text-muted-foreground/80">
               {project.tech}
@@ -39,7 +43,7 @@ export function ProjectList({ projects }: ProjectListProps) {
                     rel="noopener noreferrer"
                     className="underline hover:no-underline"
                   >
-                    GitHub
+                    {gt("GitHub")}
                   </Link>
                 </>
               )}

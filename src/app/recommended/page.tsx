@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { T, msg, useMessages } from "gt-next";
+import { getGT } from "gt-next/server";
 
 type RecommendationItem = {
   name: string;
@@ -16,18 +18,23 @@ type RecommendationSection = {
   subsections: RecommendationSubsection[];
 };
 
-export const metadata: Metadata = {
-  title: "Recommended - Ben Gubler",
-  description:
-    "A curated collection of useful links and resources that Ben Gubler has found valuable.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const gt = await getGT();
+
+  return {
+    title: gt("Recommended - Ben Gubler"),
+    description: gt(
+      "A curated collection of useful links and resources that Ben Gubler has found valuable."
+    ),
+  };
+}
 
 const recommendations: RecommendationSection[] = [
   {
-    category: "Computer Science",
+    category: msg("Computer Science"),
     subsections: [
       {
-        title: "OS Development & Systems Programming",
+        title: msg("OS Development & Systems Programming"),
         items: [
           { name: "Writing an OS in Rust", url: "https://os.phil-opp.com/" },
           {
@@ -41,7 +48,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Programming Language Development & Algebraic Effects",
+        title: msg("Programming Language Development & Algebraic Effects"),
         items: [
           {
             name: "Writing An Interpreter In Go",
@@ -55,7 +62,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Learning Languages",
+        title: msg("Learning Languages"),
         items: [
           {
             name: "CodeCrafters: Build Your Own X in Rust",
@@ -77,7 +84,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Security",
+        title: msg("Security"),
         items: [
           {
             name: "OverTheWire Wargames",
@@ -86,7 +93,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Other",
+        title: msg("Other"),
         items: [
           { name: "Redox OS", url: "https://www.redox-os.org/" },
           { name: "Omarchy", url: "https://omarchy.org/" },
@@ -100,10 +107,10 @@ const recommendations: RecommendationSection[] = [
     ],
   },
   {
-    category: "Artificial Intelligence",
+    category: msg("Artificial Intelligence"),
     subsections: [
       {
-        title: "Learning the Basics",
+        title: msg("Learning the Basics"),
         items: [
           {
             name: "Neural Networks: Zero to Hero",
@@ -116,7 +123,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "GPU & High-Performance Programming",
+        title: msg("GPU & High-Performance Programming"),
         items: [
           {
             name: "GPU and Tensor Puzzles",
@@ -130,7 +137,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Interpretability",
+        title: msg("Interpretability"),
         items: [
           {
             name: "Transformer Circuits",
@@ -147,7 +154,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Specialized Topics & Applications",
+        title: msg("Specialized Topics & Applications"),
         items: [
           {
             name: "Train a Reasoning Model with GRPO",
@@ -166,10 +173,10 @@ const recommendations: RecommendationSection[] = [
     ],
   },
   {
-    category: "Mathematics & Formal Methods",
+    category: msg("Mathematics & Formal Methods"),
     subsections: [
       {
-        title: "Learning Resources",
+        title: msg("Learning Resources"),
         items: [
           {
             name: "An Infinitely Large Napkin",
@@ -178,7 +185,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Theorem Proving",
+        title: msg("Theorem Proving"),
         items: [
           {
             name: "The Natural Number Game",
@@ -189,10 +196,10 @@ const recommendations: RecommendationSection[] = [
     ],
   },
   {
-    category: "Linguistics",
+    category: msg("Linguistics"),
     subsections: [
       {
-        title: "Conlang Design",
+        title: msg("Conlang Design"),
         items: [
           {
             name: "The Language Construction Kit",
@@ -201,7 +208,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Toki Pona",
+        title: msg("Toki Pona"),
         items: [
           {
             name: "Toki Pona in 18 Minutes",
@@ -214,7 +221,7 @@ const recommendations: RecommendationSection[] = [
         ],
       },
       {
-        title: "Other",
+        title: msg("Other"),
         items: [
           { name: "Shavian School", url: "https://shavian.school" },
           {
@@ -226,10 +233,10 @@ const recommendations: RecommendationSection[] = [
     ],
   },
   {
-    category: "Miscellaneous",
+    category: msg("Miscellaneous"),
     subsections: [
       {
-        title: "Fun & Interesting",
+        title: msg("Fun & Interesting"),
         items: [
           {
             name: "The Divergent Association Task",
@@ -242,29 +249,35 @@ const recommendations: RecommendationSection[] = [
 ];
 
 export default function RecommendedPage() {
+  const m = useMessages();
+
   return (
     <div className="space-y-12">
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-          Recommended
-        </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          A curated collection of useful links and resources I've found
-          valuable.
-        </p>
+        <T>
+          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            Recommended
+          </h1>
+        </T>
+        <T>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            A curated collection of useful links and resources I've found
+            valuable.
+          </p>
+        </T>
       </header>
 
       {recommendations.map((section) => (
         <section key={section.category} className="space-y-3">
           <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            {section.category}
+            {m(section.category)}
           </h2>
           <div className="space-y-2">
             {section.subsections.map((subsection) => (
               <div key={subsection.title} className="space-y-1">
                 <p className="text-muted-foreground leading-relaxed">
                   <span className="font-bold text-foreground">
-                    {subsection.title}
+                    {m(subsection.title)}
                   </span>
                   :{" "}
                   {subsection.items.map((item, index) => (
